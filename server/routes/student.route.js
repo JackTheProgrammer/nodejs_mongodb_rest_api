@@ -1,7 +1,6 @@
 let studentSchema = require("../model/student.model");
 let express = require("express");
 let studentRoute = express.Router();
-let mongoose = require("mongoose");
 
 studentRoute.route("/").get((req, res, next) => {
     studentSchema.find((err, data) => {
